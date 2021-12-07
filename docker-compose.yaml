@@ -6,3 +6,7 @@ services:
       - "5001:5001"
     volumes:
       - .:/code
+    depends_on:
+      - redis
+  redis:
+    image: redis

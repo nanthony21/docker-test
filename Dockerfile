@@ -10,6 +10,9 @@ WORKDIR /code
 
 # install lib
 RUN pip install flask
+RUN pip install redis
+
+# Open the port for flask
 EXPOSE 5001
 
 # Running python file
